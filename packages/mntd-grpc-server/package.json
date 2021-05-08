@@ -1,0 +1,24 @@
+{
+  "name": "@mntd/grpc-server",
+  "version": "1.0.0",
+  "description": "A VTT Written in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianduque/mntd-vtt.git"
+  },
+  "author": "Julián Duque <julianduquej@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianduque/mntd-vtt/issues"
+  },
+  "homepage": "https://github.com/julianduque/mntd-vtt#readme",
+  "dependencies": {
+    "fastify": "^3.15.1",
+    "mercurius": "^7.6.1"
+  }
+}

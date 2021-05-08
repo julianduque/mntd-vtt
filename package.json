@@ -1,0 +1,33 @@
+{
+  "name": "@mntd/vtt",
+  "version": "1.0.0",
+  "description": "A basic VTT written in Node.js",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "node server",
+    "lint": "standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianduque/mntd-vtt.git"
+  },
+  "author": "Julián Duque <julianduquej@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianduque/mntd-vtt/issues"
+  },
+  "homepage": "https://github.com/julianduque/mntd-vtt#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "fastify": "^3.15.1",
+    "mercurius": "^7.6.1",
+    "pino": "^6.11.3",
+    "pino-pretty": "^4.7.1"
+  }
+}

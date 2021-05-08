@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+service GameService {
+  rpc createGame(Game) returns (GameReply) {}
+  rpc listGames(Empty) returns (GameList) {}
+  rpc joinGame(GameRequest) returns (GameReply) {}
+}
+
+message Empty {}
+
+message Game {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  repeated Player players = 4;
+}
+
+message GameReply {
+  Game game = 1;
+  bool status = 2;
+}
+
+message GameList {
+  repeated Game games = 1;
+}
+
+message GameRequest {
+  Game game = 1;
+  Player player = 2;
+}
+
+message Player {
+  string username = 1;
+  string displayName = 2;
+  string email = 3;
+  bool isGM = 4;
+}
+
